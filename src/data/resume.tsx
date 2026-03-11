@@ -22,7 +22,7 @@ export const DATA = {
     "期望能結合商業知識與廣告背景，帶給社會更多正向影響力",
   summary:
     "測試測試測試",
-  avatarUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+  avatarUrl: "/my-avatar.png",
   skills: [
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
