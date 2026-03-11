@@ -1,6 +1,7 @@
 export const DATA = {
   name: "Meimei",
   initials: "MM",
+  url: "https://meimeiprofile.vercel.app", // 補上這行，解決編譯錯誤
   location: "Taipei, Taiwan",
   locationLink: "https://www.google.com/maps/place/taipei",
   description: "Digital Marketer / Data Analyst",
@@ -19,7 +20,7 @@ export const DATA = {
     social: {
       Threads: {
         name: "Threads",
-        url: "#",
+        url: "https://www.threads.net", // 確保這裡有網址
         navbar: true,
       },
     },
