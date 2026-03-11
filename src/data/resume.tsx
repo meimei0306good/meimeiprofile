@@ -1,101 +1,63 @@
-import { Icons } from "@/components/icons";
-import { HomeIcon, LayoutDashboardIcon } from "lucide-react";
-import { ReactLight } from "@/components/ui/svgs/reactLight";
-import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
-import { Typescript } from "@/components/ui/svgs/typescript";
-import { Nodejs } from "@/components/ui/svgs/nodejs";
-import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
-import { Csharp } from "@/components/ui/svgs/csharp";
-
 export const DATA = {
-  name: "李美燕",
-  initials: "美美",
-  url: "https://meimeiprofile.vercel.app/",
+  name: "Meimei",
+  initials: "MM",
   location: "Taipei, Taiwan",
-  locationLink: "",
-  description: "期望能結合商業知識與廣告背景，帶給社會更多正向影響力",
-  summary: "這裡放你針對這份工作的 Summary",
-  avatarUrl: "/my-avatar.png",
+  locationLink: "https://www.google.com/maps/place/taipei",
+  description: "Digital Marketer / Data Analyst",
+  summary: "妳的個人簡介寫在這裡。這是一個穩定版的資料結構，確保網站能正常運行。",
+  avatarUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Meimei",
   skills: [
-    { name: "React", icon: ReactLight },
-    { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
-    { name: "Node.js", icon: Nodejs },
-    { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    "Google Analytics",
+    "Looker Studio",
+    "Data Analysis",
+    "Social Media Marketing",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/", icon: "Home", label: "Home" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
     social: {
       Threads: {
         name: "Threads",
-        url: "https://www.threads.com/@its_meimei.li?hl=zh-tw", // 請在此處換成你的 Threads 連結
-        icon: Icons.instagram,
-        navbar: true,
-      },
-      LookerStudio: {
-        name: "Looker Studio",
-        url: "https://lookerstudio.google.com/reporting/96ba3775-697a-472e-89a4-ca3c0b6f7400", // 請在此處換成你的 Looker Studio 報表連結
-        icon: LayoutDashboardIcon,
+        url: "#",
         navbar: true,
       },
     },
   },
   work: [
     {
-      company: "在此填寫公司名稱",
+      company: "範例公司",
       href: "#",
       badges: [],
       location: "Taipei",
-      title: "職稱",
+      title: "行銷專員",
       logoUrl: "",
-      start: "開始年份",
-      end: "結束年份",
-      description: "描述你的工作成就。",
+      start: "2023",
+      end: "Present",
+      description: "負責數據追蹤與成效分析。",
     },
   ],
   education: [
     {
-      school: "在此填寫學校名稱",
+      school: "某某大學",
       href: "#",
-      degree: "學位",
+      degree: "學士學位",
       logoUrl: "",
-      start: "開始年份",
-      end: "結束年份",
+      start: "2018",
+      end: "2022",
     },
   ],
   projects: [
     {
-      title: "專案名稱",
+      title: "Looker Studio Dashboard",
       href: "#",
-      dates: "日期",
+      dates: "2024",
       active: true,
-      description: "專案描述。",
-      technologies: ["React", "TailwindCSS"],
-      links: [
-        {
-          type: "Website",
-          href: "#",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
+      description: "自動化數據報表呈現。",
+      technologies: ["Looker Studio", "BigQuery"],
       image: "",
       video: "",
+      links: [],
     },
   ],
-  hackathons: [], // 這裡留空，Hackathons 段落就會消失
-} as const;
+};
