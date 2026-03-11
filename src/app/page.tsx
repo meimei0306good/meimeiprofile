@@ -2,7 +2,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 // 根據您的報錯，這行是關鍵。如果 Vercel 依然報錯，請手動將路徑改為 "@/components/ui/resume-card"
-import { ResumeCard } from "@/components/resume-card"; 
+import { ResumeCard } from "@/components/ui/resume-card"; 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
