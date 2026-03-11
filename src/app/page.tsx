@@ -27,9 +27,6 @@ export default function Page() {
                 src={DATA.avatarUrl} 
                 alt={DATA.name} 
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = "https://api.dicebear.com/7.x/avataaars/svg?seed=fallback";
-                }}
               />
             </div>
           </BlurFade>
@@ -86,7 +83,6 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold">Projects</h2>
-            <p className="text-sm text-muted-foreground">這裡是我最近的作品</p>
           </div>
           <div className="grid grid-cols-1 gap-4">
             {DATA.projects.map((project, id) => (
@@ -101,13 +97,6 @@ export default function Page() {
                     </span>
                   ))}
                 </div>
-                {project.href && project.href !== "#" && (
-                  <div className="mt-4">
-                    <a href={project.href} target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-blue-600 hover:underline">
-                      查看專案連結 →
-                    </a>
-                  </div>
-                )}
               </div>
             ))}
           </div>
@@ -118,14 +107,18 @@ export default function Page() {
       <section id="contact" className="text-center py-16 border-t mt-10">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-muted-foreground mb-6">如果你有任何問題或合作意向，歡迎聯絡我！</p>
+          <p className="text-muted-foreground mb-6">想聊聊嗎？歡迎傳訊息給我！</p>
           <div className="flex justify-center gap-4">
-            <a 
-              href={DATA.contact.social.Threads.url} 
-              className="px-6 py-2 bg-black dark:bg-white text-white dark:text-black rounded-lg text-sm font-bold transition-transform active:scale-95"
-            >
-              在 Threads 上聯絡我
-            </a>
+            {DATA.contact.social.Threads && (
+              <a 
+                href={DATA.contact.social.Threads.url} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 bg-black dark:bg-white text-white dark:text-black rounded-lg text-sm font-bold transition-transform active:scale-95"
+              >
+                在 Threads 上聯絡我
+              </a>
+            )}
           </div>
         </BlurFade>
       </section>
