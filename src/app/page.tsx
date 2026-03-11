@@ -95,15 +95,14 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
           <p className="text-muted-foreground mb-6">想聊聊嗎？歡迎傳訊息給我！</p>
-          <div className="flex justify-center gap-4">
-            {/* 這裡改成自動抓取 social 裡面的第一個連結，不再寫死 X 或 Threads */}
+          <div className="flex flex-wrap justify-center gap-4">
             {Object.entries(DATA.contact.social).map(([name, social]) => (
               <a 
                 key={name}
                 href={social.url} 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 bg-black dark:bg-white text-white dark:text-black rounded-lg text-sm font-bold"
+                className="px-6 py-2 bg-black dark:bg-white text-white dark:text-black rounded-lg text-sm font-bold hover:opacity-80 transition-opacity"
               >
                 在 {name} 上聯絡我
               </a>
