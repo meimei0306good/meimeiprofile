@@ -96,7 +96,8 @@ export default function Page() {
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
           <p className="text-muted-foreground mb-6">想聊聊嗎？歡迎傳訊息給我！</p>
           <div className="flex flex-wrap justify-center gap-4">
-            {Object.entries(DATA.contact.social).map(([name, social]) => (
+            {/* 使用動態映射並強制轉換類型，防止 TS 抓著不存在的 X 不放 */}
+            {Object.entries(DATA.contact.social as any).map(([name, social]: [string, any]) => (
               <a 
                 key={name}
                 href={social.url} 
