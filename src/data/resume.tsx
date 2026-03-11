@@ -43,13 +43,13 @@ export const DATA = {
     social: {
       Threads: {
         name: "Threads",
-        url: "#", // 請在此處換成你的 Threads 連結
+        url: "https://www.threads.com/@its_meimei.li?hl=zh-tw", // 請在此處換成你的 Threads 連結
         icon: Icons.instagram,
         navbar: true,
       },
       LookerStudio: {
         name: "Looker Studio",
-        url: "#", // 請在此處換成你的 Looker Studio 報表連結
+        url: "https://lookerstudio.google.com/reporting/96ba3775-697a-472e-89a4-ca3c0b6f7400", // 請在此處換成你的 Looker Studio 報表連結
         icon: LayoutDashboardIcon,
         navbar: true,
       },
