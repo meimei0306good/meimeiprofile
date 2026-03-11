@@ -1,7 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
-// 根據您的報錯，這行是關鍵。如果 Vercel 依然報錯，請手動將路徑改為 "@/components/ui/resume-card"
+// 修正後的路徑：加上了 /ui/，這應該能解決 Vercel 的報錯
 import { ResumeCard } from "@/components/ui/resume-card"; 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -129,7 +129,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  這裡是我參與過的部分專案，涵蓋了數據分析與網頁開發。
+                  點擊專案可以查看更多細節。
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function Page() {
                 Get In Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                想聊聊嗎？歡迎到我的 Threads 傳訊息給我，我會盡快回覆！
+                想聊聊嗎？歡迎到我的 Threads 傳訊息給我！
               </p>
             </div>
           </BlurFade>
